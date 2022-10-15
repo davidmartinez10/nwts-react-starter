@@ -1,0 +1,34 @@
+{
+  "name": "nwts-react-starter",
+  "displayName": "NW.ts Tools React Starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "NW.js starter template with Typescript, React and NW.ts-Tools. It works with the VSCode debugger out-of-the-box.",
+  "scripts": {
+    "start": "npm run dev-hmr",
+    "patch-codecs": "nwts-patch-codecs",
+    "dev-hmr": "zx scripts/dev-hmr.mjs",
+    "clean": "zx scripts/clean.mjs",
+    "typecheck": "tsc --noEmit",
+    "build": "zx scripts/build.mjs",
+    "compile-to-bin": "zx scripts/compile.mjs",
+    "package": "zx scripts/package.mjs"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@types/chrome": "^0.0.197",
+    "@types/node": "^18.11.0",
+    "@types/nw.js": "^0.13.16",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "nw": "0.65.1-sdk",
+    "nwts-tools": "^0.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
+    "zx": "^7.1.1"
+  }
+}
